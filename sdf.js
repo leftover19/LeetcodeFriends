@@ -52,22 +52,19 @@ function render_table_row(user) {
             c0.appendChild(a);
             row.appendChild(c0);
             c1 = document.createElement("td");
-            c1.textContent = jsdata.easySolved;
+            c1.textContent = jsdata.totalSolved;
             row.appendChild(c1);
             c2 = document.createElement("td");
-            c2.textContent = jsdata.mediumSolved;
+            c2.textContent = jsdata.hardSolved;
             row.appendChild(c2);
             c3 = document.createElement("td");
-            c3.textContent = jsdata.hardSolved;
+            c3.textContent = jsdata.mediumSolved;
             row.appendChild(c3);
             c4 = document.createElement("td");
-            c4.textContent = jsdata.totalSolved;
+            c4.textContent = jsdata.easySolved;
             row.appendChild(c4);
             c5 = document.createElement("td");
             let btn = document.createElement("button");
-            const c6 = document.createElement("td");
-            c6.textContent = jsdata.ranking;
-            row.appendChild(c6);
             btn.innerHTML = "Delete";
             btn.classList.add("btn", "btn-danger", "btn-sm", "btn-rounded", "delete-btn");
             btn.setAttribute("data-field", user);
@@ -99,3 +96,48 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+
+// --------------------------------------------------------------
+const row = document.createElement("tr");
+    row.setAttribute("id", user);
+  
+    const c0 = document.createElement("td");
+    const a = document.createElement("a");
+    a.textContent = user;
+    a.href = "https://leetcode.com/".concat(user);
+    a.target = "_blank";
+    c0.appendChild(a);
+    row.appendChild(c0);
+  
+    const c1 = document.createElement("td");
+    c1.textContent = jsdata.easySolved;
+    row.appendChild(c1);
+  
+    const c2 = document.createElement("td");
+    c2.textContent = jsdata.mediumSolved;
+    row.appendChild(c2);
+  
+    const c3 = document.createElement("td");
+    c3.textContent = jsdata.hardSolved;
+    row.appendChild(c3);
+  
+    const c4 = document.createElement("td");
+    c4.textContent = jsdata.totalSolved;
+    row.appendChild(c4);
+  
+   
+  
+    const c5 = document.createElement("td");
+    const btn = document.createElement("button");
+    btn.innerHTML = "Delete";
+    btn.classList.add("btn", "btn-danger", "btn-sm", "btn-rounded", "delete-btn");
+    btn.setAttribute("data-field", user);
+    btn.setAttribute("type", "button");
+    btn.onclick = delete_user;
+    c5.appendChild(btn);
+    row.appendChild(c5);
+  
+    return row;
