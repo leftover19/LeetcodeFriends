@@ -4,7 +4,7 @@
 
 ## Description
 
-Leetcode Friends is a Chrome extension that provides valuable insights into your LeetCode progress and ranking. It takes a LeetCode username as input and displays a table with the total number of questions solved, categorized by difficulty (easy, medium, hard), and your current rank.
+Leetcode Friends is a Chrome extension that provides valuable insights into your friend's LeetCode progress and ranking. It takes a LeetCode username as input and displays a table with the total number of questions solved, categorized by difficulty (easy, medium, hard), and your current rank.
 
 This extension utilizes HTML and JSON to create a user-friendly interface and fetches data from the [LeetCode Stats API](https://leetcode-stats-api.herokuapp.com/) provided by the respective author.
 
