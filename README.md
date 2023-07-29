@@ -22,7 +22,7 @@ Follow the steps below to use the Leetcode Friends Chrome extension:
    - Click on "Load unpacked" and select the folder where you unzipped the extension files.
 
 3. **Access the Extension**:
-   - Once the extension is added, you'll see the Leetcode Friends icon ![Leetcode Friends](icon/leetcode.ico) in the Chrome toolbar.
+   - Once the extension is added, you'll see the Leetcode Friends icon ![Leetcode Friends](icons/leetcode.ico) in the Chrome toolbar.
 
 4. **Getting LeetCode Statistics**:
    - Click on the Leetcode Friends icon ![Leetcode Friends](icons/leetcode.png) to open the extension popup.
